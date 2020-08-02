@@ -23,15 +23,24 @@ function designDifferenceMoveUpButton(){
     let controls = document.createElement("div");
         controls.classList.add("design-difference__move")
         controls.innerHTML =   "<input type='text' id='up-ammount' placeholder='Enter Number' value=''>";
-        controls.innerHTML +=  "<button class='move-design-button' onClick='move_mockup();'>Move MockUp</button>";
+        controls.innerHTML +=  "<button class='move-design-button' onClick='move_mockup(); saveSettings();'>Move MockUp</button>";
     return controls;
 }
 
 function designDifferenceOpacityButton(){
     let button = document.createElement("button");
         button.classList.add("opacity-design-button");
-        button.setAttribute("onClick","change_design_opacity();");
+        button.setAttribute("onClick","change_design_opacity(); saveSettings();");
     let buttonText = document.createTextNode("Change Opacity");
+        button.appendChild(buttonText);
+    return button;
+}
+
+function designResetButton(){
+    let button = document.createElement("button");
+        button.classList.add("reset-settings-button");
+        button.setAttribute("onClick","resetSettings(); resetSettings();");
+    let buttonText = document.createTextNode("Reset");
         button.appendChild(buttonText);
     return button;
 }
@@ -43,10 +52,9 @@ function designDifferenceControls(){
         div.appendChild(designDifferenceToggleButton());
         div.appendChild(designDifferenceMoveUpButton());
         div.appendChild(designDifferenceOpacityButton());
+        div.appendChild(designResetButton());
     return div;
 }
 
-window.onload = function(){
-     let mainDiv = document.getElementById("design-difference");
-        mainDiv.appendChild(designDifferenceControls());
-};
+let mainDiv = document.getElementById("design-difference");
+    mainDiv.appendChild(designDifferenceControls());
