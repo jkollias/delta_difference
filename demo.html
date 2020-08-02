@@ -4,15 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Delta Difference</title>
+  <title>Design Difference</title>
 </head>
 <body>
 
-<script src="assets/js/delta-difference.js"></script>
+<script src="assets/js/design-difference.js"></script>
 
 <script>
-deltaDifference("assets/img/mockup.png",1600);
+designDifference("assets/img/mockup.png",1680);
 </script>
+
+
+<style>
+.logo{
+    display: block;
+    font-family: courier;
+    border: .2em solid #000;
+    font-size: 3.25vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    //margin-top: -.1em;
+}
+
+.the-design-text{
+    background: #000;
+    color: #fff;
+    font-size: 1em;
+    padding: .5em;
+}
+
+.difference-text{
+    color: #000;
+    font-size: 1em;
+    padding: .5em;
+}
+</style>
+
+<div class="logo">
+    <div class="the-design-text">The Design</div>
+    <div class="difference-text">Difference</div>
+</div>
 
 </body>
 </html>
