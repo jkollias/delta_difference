@@ -1,6 +1,8 @@
-To do
-• Add in cookies that sore mock up settings.
-• All diffrent increment px/em to enter number.
-• Add directional arrows that move the mock up depending increment.
-• Fix error message that throughs when you dont have correct path.
-• Check if file extension is jpg, png, gif, or other web formats.
+This script is to help developers execute designs from designers.
+
+Simply add designDifference("assets/img/mockup.png",1600); to you html, php, phml page.
+
+First parameter is the file name.
+Second parameter is the desired width.
+
+Determine the width the designer design their mock ups in.
