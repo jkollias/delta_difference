@@ -34,6 +34,6 @@ function resetSettings(){
     document.getElementById("design-difference__mock-up").style.opacity = .5;
     let width = document.getElementById("design-difference__mock-up").dataset.width;
     if(typeof(Storage) !== "undefined"){
-        localStorage.setItem("designDifferenceSettings"," opacity: .05; top: 0; width:"+width+"px;");
+        localStorage.setItem("designDifferenceSettings"," opacity: .5; top: 0; width:"+width+"px;");
     }
 }
