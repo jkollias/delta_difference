@@ -50,6 +50,7 @@ function designDifferenceMockUpImage(file, width){
         mockup.src = file;
         mockup.style.width = width+"px";
         mockup.style.opacity = ".5";
+        mockup.dataset.width = width;
     return mockup;
 }
 

@@ -17,7 +17,6 @@ function restoreSettings(){
     if(settings == " " || settings == null){
         console.log(settings);
     }else{
-        console.log("There is a value");
         settingMockupDiv.setAttribute("style",settings);
     }
   }

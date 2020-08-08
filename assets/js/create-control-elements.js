@@ -39,7 +39,7 @@ function designDifferenceOpacityButton(){
 function designResetButton(){
     let button = document.createElement("button");
         button.classList.add("reset-settings-button");
-        button.setAttribute("onClick","resetSettings(); resetSettings();");
+        button.setAttribute("onClick","resetSettings();");
     let buttonText = document.createTextNode("Reset");
         button.appendChild(buttonText);
     return button;
